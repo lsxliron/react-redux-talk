@@ -35,3 +35,14 @@ To navigate between different branches:
 git checkout <branch_name>
 ```
 
+## Counter Exercise 1
+In this exercise you need to complete the following files:
+- Counter.js
+    + Add initial state to the component
+    + Implement the add function
+    + Implement the subtract function
+    + Add onClick events to the -/+ buttons
+    + Display the counter value to the user
++ CounterApp.js
+    * Import you Counter component
+    * Render the Counter component in the app
