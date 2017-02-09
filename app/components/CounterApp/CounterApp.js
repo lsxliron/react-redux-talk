@@ -1,5 +1,6 @@
 import React from 'react';
-import Counter from './Counter'
+// ------> Import your counter component here  <-------
+
 
 // This class is the root of the counter app
 class CounterApp extends React.Component{
@@ -12,7 +13,7 @@ class CounterApp extends React.Component{
     return(
       <div className="container center-align">
         <h1> Counter App </h1>
-        <Counter />
+        {/* Render your Counter component here */}
       </div>
     );
   };

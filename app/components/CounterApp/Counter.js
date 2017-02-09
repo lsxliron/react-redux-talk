@@ -5,8 +5,10 @@ class Counter extends React.Component{
   constructor(props){
     super(props);
 
-    // Set initial state from the props we set or from the default prop
-    this.state = {counter:this.props.initialCounter}
+    // Set initial state to the counter 
+    // user here you must use this.state
+
+    // Your code goes here...
 
     // Bind functions to this
     this.add = this.add.bind(this)
@@ -15,32 +17,32 @@ class Counter extends React.Component{
 
   }
 
-  // Increment counter by 1
+  // Set the state after the user press the + button
   add(){
-    let {counter} = this.state
-    this.setState({counter:counter+=1})
+    // use this.setState to assign variable to the state
+    // Your code goes here ...
   }
 
-  // Bind functions to this
+  // Set the state after the user press the - button
   subtract(){
-    let {counter} = this.state
-    this.setState({counter:counter-=1})
+    // Your code goes here ...
   }
 
   // Render the two buttons and the text with the counter
   render(){
+    // Add the onClick event to each button 
     return(
       <div>
         <div className="row">
           <div className="col s6 right-align">
-            <a className="waves-effect waves-light red btn-floating btn-large" onClick={this.subtract}><i className="material-icons">remove</i></a>
+            <a className="waves-effect waves-light red btn-floating btn-large" onClick={/* add event hwew... */}><i className="material-icons">remove</i></a>
           </div>
           <div  className="col s6 left-align">
-            <a className="waves-effect waves-light red btn-floating btn-large" onClick={this.add}><i className="material-icons">add</i></a>
+            <a className="waves-effect waves-light red btn-floating btn-large" onClick={/* add event here... */}><i className="material-icons">add</i></a>
           </div>
         </div>
         <div className="row center-align">
-        <h4 className="browser-default">{this.props.msg} {this.state.counter}</h4>
+        <h4 className="browser-default">{this.props.msg} {/* Display your state to the user here */}</h4>
         </div>
       </div>
     );
@@ -48,10 +50,10 @@ class Counter extends React.Component{
 }
 
 // Set default props
-Counter.defaultProps = {msg: "The counter value is", initialCounter: 0}
+Counter.defaultProps = {msg: "The counter value is"}
 
 // Typechecking
-Counter.propTypes = {msg: React.PropTypes.string, initialCounter: React.PropTypes.number}
+Counter.propTypes = {msg: React.PropTypes.string}
 
 
 export default Counter;    
