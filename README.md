@@ -2,7 +2,7 @@
 ## Setup
 Clone the repository
 ```bash
-git clone https://github.com/lsxliron/react-redux-talk.git && git pull --all
+git clone https://github.com/lsxliron/react-redux-talk.git
 ```
 
 ## Running The App
