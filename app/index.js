@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { Router, Route, browserHistory, IndexRoute } from 'react-router'
+import { Router, Route, hashHistory, IndexRoute } from 'react-router'
 import CounterApp from './components/CounterApp/CounterApp'
 import TodoApp from './components/TodoApp/TodoApp'
 import Nav from './components/layout/Nav'
@@ -13,7 +13,7 @@ const store = createStore(RootReducer)
 
 render(
   <Provider store={store}>
-    <Router history={browserHistory}>
+    <Router history={hashHistory}>
       <Route path="/" component={Nav}>
         <IndexRoute component={Home} />
         <Route path="counter" component={CounterApp}></Route>
