@@ -42,7 +42,7 @@ To navigate between different branches:
 git checkout <branch_name>
 ```
 
-## Counter Exercise 1
+## Counter Exercise
 In this exercise you need to complete the following files:
 - Counter.js
     + Add initial state to the component
