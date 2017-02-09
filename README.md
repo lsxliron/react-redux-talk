@@ -22,6 +22,13 @@ npm install
 ```
 This will install all the packages that are listed in `package.json`
 
+## Run the Development Server
+```bash
+npm start
+```
+
+Now open your browser and navigate to  `localhost:8080`
+
 ## Organization
 This repository has a few braches:
 - **master** - has both the Todo and Counter app fully working
