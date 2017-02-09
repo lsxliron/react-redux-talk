@@ -22,20 +22,20 @@ function TodoReducer(state=initialState, action){
       let newTodo = {id: last_id+=1, text: action.text, completed: false}
 
       // Add the new todo to the state
-      return Object.assign({}, state, {todos:[...state.todos, newTodo]})
+      // Your code goes here...
 
     case CHANGE_STATUS:
       // Create a copy of the todo array
-      let newTodos = [...state.todos]
+      // Your code goes here...//
 
       // Get the todo item to change
-      let current_todo = state.todos.filter((d)=>{return d.id==action.id})[0]
+      // Your code goes here...
 
       // Change todo status
-      current_todo.completed = !current_todo.completed
+      // Your code goes here...
 
       // Return a new state      
-      return Object.assign({}, state, {todos:newTodos})
+      // Your code goes here...
 
     default:
       return state   

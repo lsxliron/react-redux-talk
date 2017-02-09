@@ -8,7 +8,7 @@ class TodoItem extends React.Component{
   constructor(props){
     super(props);
 
-    // Bind functinos to this
+    // Bind functions to this
     this.hacky = this.hacky.bind(this)
   }
 
@@ -53,7 +53,7 @@ TodoItem.propTypes = {
 // and will fire changeStatus function that is defined in TodoReducer
 function mapDispatchToProps(dispatch){
   return {
-    changeStatus: (id)=>{dispatch(actions.changeStatus(id))}
+    changeStatus: // Implement the changeStatus function
   }
 }
 export default connect(null, mapDispatchToProps)(TodoItem)

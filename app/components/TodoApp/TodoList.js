@@ -10,9 +10,7 @@ class TodoList extends React.Component{
 
   render(){
     // Create an array of TodoItems from the todos array in our state
-    let todo = this.props.todos.map((d, i)=>{
-      return <TodoItem key={`td${i}`} completed={d.completed} todoText={d.text} todo_id={d.id}/>
-    })
+    // Your code goes here...
     
     // Render the todo table
     return(
@@ -24,7 +22,7 @@ class TodoList extends React.Component{
           </tr>
         </thead>
         <tbody>
-          {todo}
+          {/* Render the todo array you created here */}
         </tbody>
       </table>
     )
@@ -51,7 +49,7 @@ TodoList.propTypes = {
 // and our state is managed exclusivly by Redux
 
 function mapPropsToState(state){
-  return state.TodoReducer
+  // Your code goes here...
 }
 
 export default connect(mapPropsToState, null)(TodoList)    
