@@ -11,7 +11,7 @@ var STYLE_DIR = path.resolve(__dirname, 'app/styles')
 
 var deps = ["react", "react-dom", "redux"]
 
-var PRODUCTION = false
+var PRODUCTION = true
 
 var entrypoints = []
 var sourcemaps = ''

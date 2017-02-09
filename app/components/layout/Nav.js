@@ -4,27 +4,21 @@ class Nav extends React.Component{
   constructor(props){
     super(props);
     // Set initial state
-    this.state={todo:false,counter:false}
+    this.state={counter:false}
 
     // Bind functions to this
-    this.todoClicked = this.todoClicked.bind(this)
     this.counterClicked = this.counterClicked.bind(this)
     this.logoClicked = this.logoClicked.bind(this)
   }
 
-  // Maked Todo link active if clicked
-  todoClicked(){
-    this.setState({todo:true, counter:false})
-  }
-
   // Maked Todo counter active if clicked
   counterClicked(){
-    this.setState({todo:false, counter:true})
+    this.setState({counter:true})
   }
 
   // Maked both links non active
   logoClicked(){
-    this.setState({todo:false, counter:false})
+    this.setState({counter:false})
   }
 
   render(){
@@ -36,7 +30,6 @@ class Nav extends React.Component{
             <Link to="/" className="brand-logo" onClick={this.logoClicked}>React Demo</Link>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
               <li className={this.state.counter?'active':''}><Link to="counter" onClick={this.counterClicked}>CounterApp</Link></li>
-              <li className={this.state.todo?'active':''}><Link to="todo" onClick={this.todoClicked}>TodoApp</Link></li>
             </ul>
           </div>
         </nav>

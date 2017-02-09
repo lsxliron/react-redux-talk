@@ -1,7 +1,9 @@
 @import '~materialize-css/sass/materialize';
-@import './todo.scss';
 @import './counter.scss';
 
+.home-container{
+  margin-top: 10%;
+}
 .brand-logo{
   margin-left:5px;
 }

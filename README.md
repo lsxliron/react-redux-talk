@@ -6,7 +6,7 @@ Make sure you have [NodeJS](https://nodejs.org/en/download/) and [NPM](http://bl
 ## Setup
 Clone the repository
 ```bash
-git clone something
+git clone https://github.com/lsxliron/react-redux-talk.git
 ```
 
 ## Install dependencies

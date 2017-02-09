@@ -8,7 +8,7 @@ class Home extends React.Component{
   // Renders the homepage
   render(){
     return(
-      <div className="container center-align">
+      <div className="container center-align home-container">
         <h3> Welcome to React Demo </h3>
         <h4> Choose one of the apps in the Navbar</h4>
       </div>
